@@ -1,0 +1,19 @@
+# Arquivos temporários do Jupyter
+.ipynb_checkpoints/
+
+# Cache do Python
+__pycache__/
+*.pyc
+
+# Ambientes virtuais
+.venv/
+venv/
+env/
+
+# Configurações locais de editores
+.vscode/
+.idea/
+
+# Arquivos do sistema
+.DS_Store
+*~
