@@ -63,7 +63,3 @@ Os arquivos de dados devem estar na mesma pasta do notebook.
 - **Parte I:** o Perceptron converge em poucas épocas e separa as duas classes sem erros.
 - **Parte II:** a configuração η = 0,01 com pesos em (−100, +100) é consistentemente a mais custosa, e as configurações com intervalo equivalente pequeno são estatisticamente equivalentes. A discussão no notebook mostra que, com θ = 0, o que determina o custo do treino é a razão entre o intervalo inicial dos pesos e a taxa de aprendizado (I/η), e não cada um isoladamente.
 - **Parte III:** no conjunto de teste, a solução obteve acurácia de 76,00%, precisão de 78,77%, revocação de 73,72% e F-Score de 76,16%, com desempenho praticamente igual ao do treino (76,57% de acurácia). O limite de desempenho vem da própria geometria do problema, já que nenhuma reta separa as classes sem erro.
-
-## Referência
-
-HAYKIN, S. *Neural Networks and Learning Machines*. 3. ed. Upper Saddle River: Pearson, 2009.
