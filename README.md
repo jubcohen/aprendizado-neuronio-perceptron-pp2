@@ -17,7 +17,7 @@ Identificador da dupla: **0** (soma dos últimos dígitos das matrículas, resto
 
 Implementação, em Python, do algoritmo de treinamento do neurônio Perceptron de Rosenblatt por aprendizado supervisionado, aplicado a problemas de classificação binária no plano. O trabalho é dividido em três partes:
 
-1. **Parte I — Problema linearmente separável.** Treinamento até a convergência no conjunto `dataAll20262.txt`, com função degrau (θ = 0), η = 0,1 e pesos iniciais em U(−0,5; +0,5).
+1. **Parte I — Problema linearmente separável.** Treinamento até a convergência no conjunto `dataAll20262.txt`, com função degrau ($\vartheta$ = 0), η = 0,1 e pesos iniciais em U(−0,5; +0,5).
 2. **Parte II — Experimentação.** Efeito da taxa de aprendizado e do intervalo dos pesos iniciais no custo do treinamento, com 10 repetições de cada uma das 6 configurações η × I = {0,4; 0,1; 0,01} × {(−100, +100); (−0,5, +0,5)} no conjunto `data020262.txt`. Os resultados são apresentados em tabela e boxplots.
 3. **Parte III — Validação holdout em problema não linearmente separável.** Divisão 70/30 do conjunto `dataHoldout20262.txt`, treinamento por 100 épocas com os exemplos embaralhados a cada época e avaliação por matriz de confusão, acurácia, precisão, revocação e F-Score.
 
@@ -61,5 +61,5 @@ Os arquivos de dados devem estar na mesma pasta do notebook.
 ## Principais resultados
 
 - **Parte I:** o Perceptron converge em poucas épocas e separa as duas classes sem erros.
-- **Parte II:** a configuração η = 0,01 com pesos em (−100, +100) é consistentemente a mais custosa, e as configurações com intervalo equivalente pequeno são estatisticamente equivalentes. A discussão no notebook mostra que, com θ = 0, o que determina o custo do treino é a razão entre o intervalo inicial dos pesos e a taxa de aprendizado (I/η), e não cada um isoladamente.
+- **Parte II:** a configuração η = 0,01 com pesos em (−100, +100) é consistentemente a mais custosa, e as configurações com intervalo equivalente pequeno são estatisticamente equivalentes. A discussão no notebook mostra que, com $\vartheta$ = 0, o que determina o custo do treino é a razão entre o intervalo inicial dos pesos e a taxa de aprendizado (I/η), e não cada um isoladamente.
 - **Parte III:** no conjunto de teste, a solução obteve acurácia de 76,00%, precisão de 78,77%, revocação de 73,72% e F-Score de 76,16%, com desempenho praticamente igual ao do treino (76,57% de acurácia). O limite de desempenho vem da própria geometria do problema, já que nenhuma reta separa as classes sem erro.
